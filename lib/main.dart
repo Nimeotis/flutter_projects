@@ -32,7 +32,6 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepOrangeAccent,
       body: Stack(
         children: [
           Align(
@@ -40,25 +39,25 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text(
               "Test your \nreaction speed",
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 40,
-                  fontWeight: FontWeight.w800,
-                  color: Colors.blueAccent),
+              style: TextStyle(fontSize: 38,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white),
             ),
           ),
 
           Align(
             alignment: Alignment.center,
             child: ColoredBox(
-              color: Colors.green,
+              color: Color.fromARGB(0xFF,0x6D,0x6D,0x6D),
               child: SizedBox(
                 height: 160, width: 300,
                 child: Center(
                   child: Text(
                     millisecondsText,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 40,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.blueGrey),
+                    style: TextStyle(fontSize: 36,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white),
                   ),
                 ),
               ),
@@ -91,9 +90,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Center(
                           child: Text(
                             _getButtonText(),
-                            style: TextStyle(fontSize: 45,
-                                fontWeight: FontWeight.w800,
-                                color: Colors.black),
+                            style: TextStyle(fontSize: 38,
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white),
                           ),
                         ),
                       ),
@@ -102,6 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
         ],
       ),
+      backgroundColor: Color.fromARGB(0xFF,0x28,0x2E,0x3D),
     );
   }
 
