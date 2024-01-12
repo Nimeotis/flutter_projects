@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Align(
             alignment: Alignment.center,
             child: ColoredBox(
-              color: Color.fromARGB(0xFF,0x6D,0x6D,0x6D),
+              color: const Color(0xFF6D6D6D),
               child: SizedBox(
                 height: 160, width: 300,
                 child: Center(
@@ -101,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
         ],
       ),
-      backgroundColor: Color.fromARGB(0xFF,0x28,0x2E,0x3D),
+      backgroundColor: const Color(0xFF282E3D),
     );
   }
 
